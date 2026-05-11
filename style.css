@@ -506,14 +506,42 @@ footer {
 }
 
 /* ===== RWD ===== */
+.nav-hamburger {
+  display: none;
+  flex-direction: column;
+  gap: 5px;
+  cursor: pointer;
+  padding: 4px;
+  background: none;
+  border: none;
+}
+.nav-hamburger span {
+  width: 24px; height: 2px;
+  background: var(--navy);
+  transition: 0.3s;
+  display: block;
+}
+
 @media (max-width: 900px) {
+  .nav-links { display: none; }
+  .nav-links.open {
+    display: flex; flex-direction: column;
+    position: fixed; top: 68px; left: 0; right: 0;
+    background: rgba(240,244,248,0.98);
+    backdrop-filter: blur(16px);
+    padding: 1.5rem 2rem;
+    gap: 1.5rem;
+    border-bottom: 1px solid var(--gray-200);
+    z-index: 99;
+  }
+  .nav-hamburger { display: flex; }
+
   .hero-inner { grid-template-columns: 1fr; }
   .hero-panel { display: none; }
   .data-chip { display: none; }
   .about-grid, .cert-grid, .contact-grid { grid-template-columns: 1fr; }
   .services-grid { grid-template-columns: 1fr; }
   .hero-title { font-size: clamp(2.8rem, 10vw, 3.5rem); }
-  
   .hero-content { padding: 0 1rem; }
   .hero-desc { font-size: 0.88rem; max-width: 100%; }
   .hero-actions { flex-direction: column; }
