@@ -513,4 +513,11 @@ footer {
   .about-grid, .cert-grid, .contact-grid { grid-template-columns: 1fr; }
   .services-grid { grid-template-columns: 1fr; }
   .hero-title { font-size: clamp(2.8rem, 10vw, 3.5rem); }
+  
+  .hero-content { padding: 0 1rem; }
+  .hero-desc { font-size: 0.88rem; max-width: 100%; }
+  .hero-actions { flex-direction: column; }
+  .btn-primary, .btn-outline { width: 100%; justify-content: center; }
+  .hero-stats { gap: 1.5rem; flex-wrap: wrap; }
+  .hero-stat-num { font-size: 2rem; }
 }
