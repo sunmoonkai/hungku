@@ -3,9 +3,51 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>泓谷企業有限公司 | 中央空調・冷凍工程專家</title>
-    <meta name="description" content="泓谷企業有限公司，專營中央空調工程、變頻冷暖空調、冷氣安裝維修保養，服務台中、彰化地區30年。">
-    
+    <title>泓谷企業有限公司 | 彰化台中中央空調工程專家</title>
+    <meta name="description" content="泓谷企業有限公司，深耕彰化、台中三十年，專業冷凍空調工程業。提供中央空調系統工程、變頻冷暖空調安裝、冷氣維修清洗保養。電話：04-763-6171。">
+    <meta name="keywords" content="中央空調,空調工程,冷氣安裝,冷氣維修,空調保養,彰化空調,台中空調,變頻冷暖空調,冰水主機,箱型冷氣,冷凍空調工程業">
+    <link rel="canonical" href="https://hungku.com/">
+
+    <!-- Open Graph -->
+    <meta property="og:type" content="website">
+    <meta property="og:url" content="https://hungku.com/">
+    <meta property="og:title" content="泓谷企業有限公司 | 彰化台中中央空調工程專家">
+    <meta property="og:description" content="深耕彰化、台中三十年，經濟部審查合格冷凍空調工程業。專業中央空調、變頻冷暖空調安裝、冷氣維修保養。">
+    <meta property="og:locale" content="zh_TW">
+
+    <!-- JSON-LD 結構化資料 -->
+    <script type="application/ld+json">
+    {
+      "@context": "https://schema.org",
+      "@type": "HVACBusiness",
+      "name": "泓谷企業有限公司",
+      "alternateName": "HUNG KU ENTERPRISE CO., LTD.",
+      "description": "經濟部審查合格冷凍空調工程業，提供中央空調系統工程、變頻冷暖空調安裝、冷氣維修清洗保養服務",
+      "url": "https://hungku.com/",
+      "telephone": "+886-4-763-6171",
+      "address": {
+        "@type": "PostalAddress",
+        "streetAddress": "南興街121巷25弄41號",
+        "addressLocality": "彰化市",
+        "addressRegion": "彰化縣",
+        "postalCode": "500",
+        "addressCountry": "TW"
+      },
+      "openingHoursSpecification": {
+        "@type": "OpeningHoursSpecification",
+        "dayOfWeek": ["Monday","Tuesday","Wednesday","Thursday","Friday"],
+        "opens": "08:00",
+        "closes": "17:00"
+      },
+      "areaServed": [
+        { "@type": "City", "name": "彰化市" },
+        { "@type": "AdministrativeArea", "name": "彰化縣" },
+        { "@type": "City", "name": "台中市" }
+      ],
+      "foundingDate": "1995"
+    }
+    </script>
+
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Noto+Sans+TC:wght@300;400;500;700&family=Oswald:wght@300;400;500;600;700&family=DM+Serif+Display:ital@0;1&display=swap" rel="stylesheet">
@@ -15,6 +57,7 @@
 
 </head>
 <body>
+<div id="scroll-progress"></div>
 
 <nav id="navbar">
   <div class="nav-inner">
@@ -45,31 +88,33 @@
   <div class="hero-inner">
     <!-- Left content -->
     <div class="hero-content">
-      <div class="hero-eyebrow">經濟部審查合格冷凍空調工程業</div>
+      <div class="hero-eyebrow">
+        <span class="eyebrow-tag">合格登記</span>
+        經濟部審查 · 冷凍空調工程業
+      </div>
       <h1 class="hero-title">
-        <span class="line-main">專業冷凍</span>
         <span class="line-main">空調工程</span>
         <span class="line-sub">Refrigeration &amp; Air-Conditioning</span>
       </h1>
-      <p class="hero-desc">深耕台中、彰化三十年，泓谷企業有限公司秉持專業、品質與效率的核心理念，以嚴謹的施工標準與具專業證照的技術團隊，為廠房、商辦空間及醫療院所打造穩定、安全且高效的空調環境，提供值得信賴的冷凍空調整合服務。</p>
+      <p class="hero-desc">深耕台中、彰化三十年，泓谷企業有限公司秉持專業、品質與效率的核心理念，以嚴謹的施工標準與具專業證照的技術團隊，為廠房、商辦空間及大型娛樂休閒場所打造穩定、安全且高效的空調環境，提供值得信賴的冷凍空調整合服務。</p>
       <div class="hero-actions">
         <a href="#contact" class="btn-primary">
           <svg width="14" height="14" viewBox="0 0 24 24" fill="currentColor"><path d="M2 3h6a4 4 0 0 1 4 4v14a3 3 0 0 0-3-3H2z"/><path d="M22 3h-6a4 4 0 0 0-4 4v14a3 3 0 0 1 3-3h7z"/></svg>
           聯絡我們
         </a>
-        <a href="#services" class="btn-outline">查看服務項目 →</a>
+        <a href="#services" class="btn-outline">服務項目 →</a>
       </div>
       <div class="hero-stats">
         <div class="hero-stat">
-          <div class="hero-stat-num">30<span>+</span></div>
+          <div class="hero-stat-num" data-count="30">0<span class="stat-suffix">+</span></div>
           <div class="hero-stat-label">年工程經驗</div>
         </div>
         <div class="hero-stat">
-          <div class="hero-stat-num">1000<span>+</span></div>
+          <div class="hero-stat-num" data-count="1000">0<span class="stat-suffix">+</span></div>
           <div class="hero-stat-label">完工案例</div>
         </div>
         <div class="hero-stat">
-          <div class="hero-stat-num">台中、彰化</div>
+          <div class="hero-stat-num" style="font-size:1.5rem; letter-spacing:-0.02em;">台中<span>・</span>彰化</div>
           <div class="hero-stat-label">服務區域</div>
         </div>
       </div>
@@ -141,15 +186,15 @@
       <div class="cert-text reveal">
         <div class="section-label">專業認證</div>
         <h2 class="section-title">合法登記<br>冷凍空調工程業</h2>
-        <p>泓谷企業有限公司領有經濟部核發之合格證書，所有工程皆由具備國家技術證照的專業師傅親自施工與把關，以嚴謹的施工流程與穩定的工程品質，提供安全可靠的空調服務，讓客戶安心託付、放心使用。</p>
+        <p>泓谷企業有限公司領有經濟部核發之合格證書，所有工程皆由具備國家技術證照的專業師傅把關，以嚴謹的施工流程與穩定的工程品質，提供安全可靠的空調服務，讓客戶安心託付、放心使用。</p>
         <div class="cert-tags">
           <span class="tag-item">✓ 經濟部審查合格</span>
-          <span class="tag-item">✓ 專業技術人員持證</span>
+          <span class="tag-item">✓ 專業持證技術人員</span>
         </div>
       </div>
       <div class="cert-visual reveal">
         <div class="cert-frame">
-          <img src="license.jpg" alt="合格證書">
+          <img src="license.jpg" alt="合格證書" loading="lazy">
           <div class="cert-gloss"></div>
         </div>
       </div>
@@ -163,14 +208,14 @@
     <div class="about-grid">
       <div style="position:relative" class="reveal">
         <div class="about-img-main">
-		  <img src="main.jpg" alt="泓谷企業工程實景" style="width:100%; height:100%; object-fit:cover; position:absolute; inset:0;">
+		  <img src="main.jpg" alt="泓谷企業工程實景" loading="lazy" style="width:100%; height:100%; object-fit:cover; position:absolute; inset:0;">
 		</div>
         <div class="about-badge-float">30+<small style="display:block; font-size:0.6rem; font-weight:400; letter-spacing:0.1em; opacity:0.6; margin-top:4px">年專業經驗</small></div>
       </div>
       <div class="about-content reveal">
         <div class="section-label">關於我們</div>
         <h2 class="section-title">深耕中部三十年</h2>
-        <p class="about-text">泓谷企業有限公司成立於民國八十四年六月，深耕冷凍空調工程領域三十逾年，為經濟部審查合格之冷凍空調工程業者。公司專營中央空調工程、變頻冷暖空調、氣冷與水冷箱型冷氣之安裝、維修及保養服務，累積豐富的工程實務經驗。多年來，泓谷企業持續秉持專業技術、誠信服務與完善施工品質的核心理念，不斷精進工程技術與服務流程，致力於提供客戶高品質且值得信賴的空調解決方案。同時，亦提供專業諮詢與客製化規劃服務，以滿足不同客戶需求。客戶長期的支持與肯定，正是本公司持續成長與堅持品質的最大動力。</p>
+        <p class="about-text">泓谷企業有限公司成立於民國八十四年六月，深耕冷凍空調工程領域三十逾年，為經濟部審查合格之冷凍空調工程業者。公司專營中央空調工程、變頻冷暖空調、氣冷與水冷箱型冷氣之安裝、維修及保養服務，累積豐富的工程實務經驗。多年來，泓谷企業持續秉持專業技術、誠信服務與完善施工品質的核心理念，不斷精進工程技術與服務流程，致力於提供客戶高品質且值得信賴的空調解決方案。客戶長期的支持與肯定，正是本公司持續成長與堅持品質的最大動力。</p>
       </div>
     </div>
   </div>
@@ -185,7 +230,7 @@
       <div class="service-card reveal">
         <div class="service-icon-wrap"><svg width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="var(--blue)" stroke-width="2"><rect x="2" y="3" width="20" height="14" rx="2"/></svg></div>
         <h3 style="margin-bottom:0.6rem; font-family:'Oswald',sans-serif; font-weight:600; font-size:1.1rem; color:var(--navy)">中央空調工程</h3>
-        <p style="font-size:0.88rem; color:var(--text-muted)">商辦大樓、廠房、醫療院所系統規劃施工。</p>
+        <p style="font-size:0.88rem; color:var(--text-muted)">商辦大樓、廠房、大型娛樂休閒場所系統規劃施工。</p>
       </div>
       <div class="service-card featured reveal">
         <div class="service-icon-wrap" style="background:rgba(255,255,255,0.1)"><svg width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="var(--cyan)" stroke-width="2"><path d="M13 2L3 14h9l-1 8 10-12h-9l1-8z"/></svg></div>
@@ -208,13 +253,13 @@
     <h2 class="section-title">施工案例展示</h2>
     <div class="swiper project-swiper">
       <div class="swiper-wrapper">
-        <div class="swiper-slide"><div class="project-card"><img src="p1.jpg" alt="商用廠辦"> <div class="p-info">商用廠辦空調施工</div></div></div>
-        <div class="swiper-slide"><div class="project-card"><img src="p2.jpg" alt="工廠大型"> <div class="p-info">工廠大型空調施工</div></div></div>
-        <div class="swiper-slide"><div class="project-card"><img src="p3.jpg" alt="冰水主機"> <div class="p-info">冰水主機安裝施工</div></div></div>
-        <div class="swiper-slide"><div class="project-card"><img src="p4.jpg" alt="箱型冷氣"> <div class="p-info">箱型冷氣安裝施工</div></div></div>
-        <div class="swiper-slide"><div class="project-card"><img src="p5.jpg" alt="分離式">   <div class="p-info">分離式冷氣安裝施工</div></div></div>
-        <div class="swiper-slide"><div class="project-card"><img src="p6.jpg" alt="變頻多聯"> <div class="p-info">變頻多聯冷暖空調施工</div></div></div>
-		<div class="swiper-slide"><div class="project-card"><img src="p7.jpg" alt="冷氣空調維修保養"> <div class="p-info">冷氣空調維修保養</div></div></div>
+        <div class="swiper-slide"><div class="project-card"><img src="p1.jpg" alt="商用廠辦" loading="lazy"> <div class="p-info">商用廠辦空調施工</div></div></div>
+        <div class="swiper-slide"><div class="project-card"><img src="p2.jpg" alt="工廠大型" loading="lazy"> <div class="p-info">工廠大型空調施工</div></div></div>
+        <div class="swiper-slide"><div class="project-card"><img src="p3.jpg" alt="冰水主機" loading="lazy"> <div class="p-info">冰水主機安裝施工</div></div></div>
+        <div class="swiper-slide"><div class="project-card"><img src="p4.jpg" alt="箱型冷氣" loading="lazy"> <div class="p-info">箱型冷氣安裝施工</div></div></div>
+        <div class="swiper-slide"><div class="project-card"><img src="p5.jpg" alt="分離式" loading="lazy">   <div class="p-info">分離式冷氣安裝施工</div></div></div>
+        <div class="swiper-slide"><div class="project-card"><img src="p6.jpg" alt="變頻多聯" loading="lazy"> <div class="p-info">變頻多聯冷暖空調施工</div></div></div>
+		<div class="swiper-slide"><div class="project-card"><img src="p7.jpg" alt="冷氣空調維修保養" loading="lazy"> <div class="p-info">冷氣空調維修保養</div></div></div>
       </div>
       <div class="swiper-pagination"></div>
     </div>
@@ -228,6 +273,8 @@
       <div class="contact-info reveal">
         <div class="section-label">聯絡我們</div>
         <h2 class="section-title">聯絡我們</h2>
+        <div class="contact-card"><strong>電話</strong><span><a href="tel:047636171" style="color:inherit; text-decoration:none;">04 763 6171</a></span></div>
+        <div class="contact-card"><strong>地址</strong><span>500 彰化縣彰化市南興街 121 巷 25 弄 41 號</span></div>
         <div class="contact-card"><strong>服務區域</strong><span>台中市、彰化縣 全區</span></div>
         <div class="contact-card"><strong>營業時間</strong><span>週一至週五 08:00 – 17:00</span></div>
       </div>
@@ -249,9 +296,16 @@
             <label>需求說明</label>
             <textarea name="message" rows="4" placeholder="請簡述您的空調需求..."></textarea>
           </div>
-          <button type="submit" class="form-submit">送出申請 →</button>
+          <button type="submit" class="form-submit">送出 →</button>
         </form>
       </div>
+    </div>
+    <div class="map-block reveal">
+      <iframe
+        src="https://maps.google.com/maps?q=500彰化縣彰化市南興里南興街121巷25弄41號&hl=zh-TW&output=embed&z=17"
+        width="100%" height="380" style="border:0;" allowfullscreen="" loading="lazy"
+        referrerpolicy="no-referrer-when-downgrade" title="泓谷企業有限公司 地圖位置">
+      </iframe>
     </div>
   </div>
 </section>
@@ -278,13 +332,14 @@
 
 <footer>
   <div class="container">
-    <p>© 泓谷企業有限公司 版權所有 | 經濟部審查合格冷凍空調工程業</p>
+    <p>© <span id="footer-year"></span> 泓谷企業有限公司 版權所有 | 經濟部審查合格冷凍空調工程業</p>
   </div>
 </footer>
 
 <script src="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.js"></script>
 <script>
-  const swiper = new Swiper('.project-swiper', {
+  // Swiper
+  new Swiper('.project-swiper', {
     loop: true,
     autoplay: { delay: 3000, disableOnInteraction: false },
     pagination: { el: '.swiper-pagination', clickable: true },
@@ -293,17 +348,74 @@
     breakpoints: { 768: { slidesPerView: 2 }, 1024: { slidesPerView: 3 } }
   });
 
-  const reveals = document.querySelectorAll('.reveal');
+  // Stagger service cards
+  document.querySelectorAll('.services-grid .service-card').forEach((el, i) => {
+    el.style.transitionDelay = (i * 0.12) + 's';
+  });
+
+  // Number counter
+  function countUp(el) {
+    const target = +el.dataset.count;
+    const suffix = el.querySelector('.stat-suffix');
+    const suffixHTML = suffix ? suffix.outerHTML : '';
+    const duration = 1800;
+    let start = null;
+    const tick = ts => {
+      if (!start) start = ts;
+      const p = Math.min((ts - start) / duration, 1);
+      const ease = 1 - Math.pow(1 - p, 3);
+      el.innerHTML = Math.floor(ease * target) + suffixHTML;
+      if (p < 1) requestAnimationFrame(tick);
+    };
+    requestAnimationFrame(tick);
+  }
+
+  // Reveal + counter observer
   const observer = new IntersectionObserver((entries) => {
     entries.forEach(entry => {
-      if (entry.isIntersecting) entry.target.classList.add('visible');
+      if (!entry.isIntersecting) return;
+      entry.target.classList.add('visible');
+      if (entry.target.dataset.count) {
+        countUp(entry.target);
+        observer.unobserve(entry.target);
+      }
     });
-  }, { threshold: 0.1 });
-  reveals.forEach(el => observer.observe(el));
-  
+  }, { threshold: 0.15 });
+
+  document.querySelectorAll('.reveal').forEach(el => observer.observe(el));
+  document.querySelectorAll('[data-count]').forEach(el => observer.observe(el));
+
+  // Scroll: progress bar + nav scrolled state + active section
+  const progressBar = document.getElementById('scroll-progress');
+  const navbar = document.getElementById('navbar');
+  const sections = document.querySelectorAll('section[id]');
+  const navLinks = document.querySelectorAll('.nav-links a');
+
+  window.addEventListener('scroll', () => {
+    const scrollTop = window.scrollY;
+    const docHeight = document.documentElement.scrollHeight - window.innerHeight;
+    progressBar.style.width = (scrollTop / docHeight * 100) + '%';
+
+    navbar.classList.toggle('scrolled', scrollTop > 60);
+
+    let current = '';
+    sections.forEach(s => { if (scrollTop >= s.offsetTop - 120) current = s.id; });
+    navLinks.forEach(link => {
+      link.classList.toggle('active', link.getAttribute('href') === '#' + current);
+    });
+  }, { passive: true });
+
+  // Mobile nav
   document.getElementById('hamburger').addEventListener('click', () => {
-  document.querySelector('.nav-links').classList.toggle('open');
-});
+    document.querySelector('.nav-links').classList.toggle('open');
+  });
+  document.querySelectorAll('.nav-links a').forEach(link => {
+    link.addEventListener('click', () => {
+      document.querySelector('.nav-links').classList.remove('open');
+    });
+  });
+
+  document.getElementById('footer-year').textContent = new Date().getFullYear();
 </script>
 </body>
 </html>
