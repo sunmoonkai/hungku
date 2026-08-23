@@ -6,14 +6,28 @@
     <title>泓谷企業有限公司</title>
     <meta name="description" content="泓谷企業有限公司，深耕彰化、台中三十年，專業冷凍空調工程業。提供中央空調系統工程、變頻冷暖空調安裝、冷氣維修清洗保養。電話：04-763-6171。">
     <meta name="keywords" content="中央空調,空調工程,冷氣安裝,冷氣維修,空調保養,彰化空調,台中空調,變頻冷暖空調,冰水主機,箱型冷氣,冷凍空調工程業">
+    <meta name="robots" content="index, follow, max-image-preview:large">
+    <meta name="author" content="泓谷企業有限公司">
+    <meta name="geo.region" content="TW-CHA">
+    <meta name="geo.placename" content="彰化市">
     <link rel="canonical" href="https://hungku.com/">
 
     <!-- Open Graph -->
     <meta property="og:type" content="website">
     <meta property="og:url" content="https://hungku.com/">
-    <meta property="og:title" content="泓谷企業有限公司">
+    <meta property="og:title" content="泓谷企業有限公司｜冷凍空調工程專業">
     <meta property="og:description" content="深耕彰化、台中三十年，經濟部審查合格冷凍空調工程業。專業中央空調、變頻冷暖空調安裝、冷氣維修保養。">
+    <meta property="og:image" content="https://hungku.com/main.jpg">
+    <meta property="og:image:alt" content="泓谷企業空調工程實景">
+    <meta property="og:site_name" content="泓谷企業有限公司">
     <meta property="og:locale" content="zh_TW">
+
+    <!-- Twitter -->
+    <meta name="twitter:card" content="summary_large_image">
+    <meta name="twitter:title" content="泓谷企業有限公司｜冷凍空調工程專業">
+    <meta name="twitter:description" content="深耕彰化、台中三十年，經濟部審查合格冷凍空調工程業。專業中央空調、變頻冷暖空調安裝、冷氣維修保養。">
+    <meta name="twitter:image" content="https://hungku.com/main.jpg">
+    <meta name="theme-color" content="#0a0a08">
 
     <!-- JSON-LD 結構化資料 -->
     <script type="application/ld+json">
@@ -25,6 +39,9 @@
       "description": "經濟部審查合格冷凍空調工程業，提供中央空調系統工程、變頻冷暖空調安裝、冷氣維修清洗保養服務",
       "url": "https://hungku.com/",
       "telephone": "+886-4-763-6171",
+      "image": "https://hungku.com/main.jpg",
+      "logo": "https://hungku.com/main.jpg",
+      "priceRange": "$$",
       "address": {
         "@type": "PostalAddress",
         "streetAddress": "南興街121巷25弄41號",
@@ -33,270 +50,291 @@
         "postalCode": "500",
         "addressCountry": "TW"
       },
+      "geo": { "@type": "GeoCoordinates", "latitude": 24.0669, "longitude": 120.5161 },
       "openingHoursSpecification": {
         "@type": "OpeningHoursSpecification",
         "dayOfWeek": ["Monday","Tuesday","Wednesday","Thursday","Friday"],
-        "opens": "08:00",
-        "closes": "17:00"
+        "opens": "08:00", "closes": "17:00"
       },
       "areaServed": [
         { "@type": "City", "name": "彰化市" },
         { "@type": "AdministrativeArea", "name": "彰化縣" },
         { "@type": "City", "name": "台中市" }
       ],
+      "hasOfferCatalog": {
+        "@type": "OfferCatalog", "name": "空調工程服務",
+        "itemListElement": [
+          { "@type": "Offer", "itemOffered": { "@type": "Service", "name": "中央空調系統工程" } },
+          { "@type": "Offer", "itemOffered": { "@type": "Service", "name": "變頻冷暖空調安裝" } },
+          { "@type": "Offer", "itemOffered": { "@type": "Service", "name": "冷氣維修・清洗保養" } },
+          { "@type": "Offer", "itemOffered": { "@type": "Service", "name": "商用廠辦空調施工" } },
+          { "@type": "Offer", "itemOffered": { "@type": "Service", "name": "冰水主機、箱型冷氣安裝施工" } }
+        ]
+      },
       "foundingDate": "1995"
     }
     </script>
 
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-    <link href="https://fonts.googleapis.com/css2?family=Noto+Sans+TC:wght@300;400;500;700&family=Oswald:wght@300;400;500;600;700&family=DM+Serif+Display:ital@0;1&display=swap" rel="stylesheet">
-    
-    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.css" />
-    <link rel="stylesheet" href="style.css">
+    <link href="https://fonts.googleapis.com/css2?family=Cormorant+Garamond:ital,wght@0,300;0,400;0,500;0,600;1,300&family=Noto+Sans+TC:wght@300;400;500&family=Noto+Serif+TC:wght@200;300;400&display=swap" rel="stylesheet">
 
+    <link rel="stylesheet" href="style.css">
 </head>
 <body>
-<div id="scroll-progress"></div>
+<a href="#hero" class="skip-link">跳至主要內容</a>
+<div id="progress" aria-hidden="true"></div>
 
-<nav id="navbar">
-  <div class="nav-inner">
-    <a href="/" class="logo">
-	  <div class="logo-text">泓谷企業有限公司<span>HUNG KU ENTERPRISE CO., LTD.</span></div>
-	</a>
-    <ul class="nav-links">
-      <li><a href="#about">關於我們</a></li>
-      <li><a href="#services">服務項目</a></li>
-      <li><a href="#portfolio">工程實績</a></li>
-      <li><a href="#contact" class="nav-cta">聯絡我們</a></li>
-    </ul>
-    <button class="nav-hamburger" id="hamburger" aria-label="選單">
+<!-- ============ NAV ============ -->
+<header id="nav">
+  <div class="wrap nav-in">
+    <a href="#hero" class="brand" aria-label="泓谷企業有限公司 首頁">
+      <span class="dm">◆</span>
+      <span class="nm">泓谷企業有限公司<span class="en">HUNG KU ENTERPRISE CO., LTD.</span></span>
+    </a>
+    <nav aria-label="主選單">
+      <ul class="nav-links">
+        <li><a href="#about">關於我們</a></li>
+        <li><a href="#services">服務項目</a></li>
+        <li><a href="#portfolio">工程實績</a></li>
+        <li><a href="#contact" class="nav-cta">聯絡我們</a></li>
+      </ul>
+    </nav>
+    <button class="hamburger" id="hamburger" aria-label="開啟選單" aria-expanded="false" aria-controls="m-menu">
       <span></span><span></span><span></span>
     </button>
   </div>
-</nav>
+  <div id="m-menu">
+    <a href="#about">關於我們</a>
+    <a href="#services">服務項目</a>
+    <a href="#portfolio">工程實績</a>
+    <a href="#contact">聯絡我們</a>
+    <a href="tel:047636171" class="mt">TEL — 04-763-6171</a>
+  </div>
+</header>
 
-<!-- ====== HERO ====== -->
+<!-- ============ HERO ============ -->
 <section id="hero">
-  <div class="hero-scanlines"></div>
-  <div class="hero-slash"></div>
-  <div class="hero-slash-2"></div>
-  <div class="hero-dots"></div>
-  <div class="hero-bracket tl"></div>
-  <div class="hero-bracket br"></div>
-
-  <div class="hero-inner">
-    <!-- Left content -->
-    <div class="hero-content">
-      <div class="hero-eyebrow">
-        <span class="eyebrow-tag">合格登記</span>
-        經濟部審查 · 冷凍空調工程業
-      </div>
-      <h1 class="hero-title">
-        <span class="line-main">空調工程</span>
-        <span class="line-sub">Refrigeration &amp; Air-Conditioning</span>
-      </h1>
-      <p class="hero-desc">深耕台中、彰化三十年，泓谷企業有限公司秉持專業、品質與效率的核心理念，以嚴謹的施工標準與具專業證照的技術團隊，為廠房、商辦空間及大型娛樂休閒場所打造穩定、安全且高效的空調環境，提供值得信賴的冷凍空調整合服務。</p>
-      <div class="hero-actions">
-        <a href="#contact" class="btn-primary">
-          <svg width="14" height="14" viewBox="0 0 24 24" fill="currentColor"><path d="M2 3h6a4 4 0 0 1 4 4v14a3 3 0 0 0-3-3H2z"/><path d="M22 3h-6a4 4 0 0 0-4 4v14a3 3 0 0 1 3-3h7z"/></svg>
-          聯絡我們
-        </a>
-        <a href="#services" class="btn-outline">服務項目 →</a>
-      </div>
-      <div class="hero-stats">
-        <div class="hero-stat">
-          <div class="hero-stat-num" data-count="30">0<span class="stat-suffix">+</span></div>
-          <div class="hero-stat-label">年工程經驗</div>
-        </div>
-        <div class="hero-stat">
-          <div class="hero-stat-num" data-count="1000">0<span class="stat-suffix">+</span></div>
-          <div class="hero-stat-label">完工案例</div>
-        </div>
-        <div class="hero-stat">
-          <div class="hero-stat-num" style="font-size:1.5rem; letter-spacing:-0.02em;">台中<span>・</span>彰化</div>
-          <div class="hero-stat-label">服務區域</div>
-        </div>
-      </div>
-    </div>
-
-    <!-- Right: Tech panel -->
-    <div class="hero-visual">
-      <div class="hero-panel">
-        <div class="panel-main">
-          <div class="panel-corner tr"></div>
-          <div class="panel-corner bl"></div>
-          <div class="panel-tag">// SERVICE OVERVIEW</div>
-          <div class="panel-services">
-            <div class="panel-service-item">
-              <span class="psi-num">01</span>
-              <span class="psi-name">中央空調系統工程</span>
-              <div class="psi-bar"><div class="psi-fill" style="animation-delay:0.8s; width:92%;"></div></div>
-            </div>
-            <div class="panel-service-item">
-              <span class="psi-num">02</span>
-              <span class="psi-name">變頻冷暖空調安裝</span>
-              <div class="psi-bar"><div class="psi-fill" style="animation-delay:1.0s; width:88%;"></div></div>
-            </div>
-            <div class="panel-service-item">
-              <span class="psi-num">03</span>
-              <span class="psi-name">冷氣維修・清洗保養</span>
-              <div class="psi-bar"><div class="psi-fill" style="animation-delay:1.2s; width:95%;"></div></div>
-            </div>
-            <div class="panel-service-item">
-              <span class="psi-num">04</span>
-              <span class="psi-name">商用廠辦空調施工</span>
-              <div class="psi-bar"><div class="psi-fill" style="animation-delay:1.4s; width:80%;"></div></div>
-            </div>
-            <div class="panel-service-item">
-              <span class="psi-num">05</span>
-              <span class="psi-name">冰水主機、箱型冷氣安裝施工</span>
-              <div class="psi-bar"><div class="psi-fill" style="animation-delay:1.6s; width:75%;"></div></div>
-            </div>
-          </div>
-          <div class="panel-cert">
-            <div class="cert-icon">
-              <svg viewBox="0 0 24 24"><path d="M9 11l3 3L22 4M21 12v7a2 2 0 01-2 2H5a2 2 0 01-2-2V5a2 2 0 012-2h11"/></svg>
-            </div>
-            <div class="cert-text-wrap">
-              <div class="cert-title">// CERTIFIED</div>
-              <div class="cert-sub">經濟部審查合格證書<br>國家技術證照持有師傅施工</div>
-            </div>
-          </div>
-        </div>
-      </div>
+  <div class="hero-bg" aria-hidden="true">
+    <picture>
+      <source srcset="hero.webp" type="image/webp">
+      <img src="hero.jpg" alt="" width="774" height="1161" fetchpriority="high">
+    </picture>
+  </div>
+  <div class="hero-in">
+    <div class="hero-top-line" aria-hidden="true"></div>
+    <div class="eyebrow line hero-eyebrow">Refrigeration &amp; Air-Conditioning</div>
+    <h1 class="hero-title">冷凍空調工程</h1>
+    <div class="hero-star" aria-hidden="true">✦</div>
+    <div class="hero-sub">經濟部審查合格 · 深耕台中彰化三十年</div>
+    <p class="hero-desc">以嚴謹的施工標準與具專業證照的技術團隊<span class="sep">·</span><br>為廠房、商辦及大型休閒場所<br>打造穩定、安全且高效的空調環境</p>
+    <div class="hero-actions">
+      <a href="#contact" class="btn">聯絡我們 <span class="ar">→</span></a>
+      <a href="#services" class="btn" style="border-color:var(--noir-600);color:var(--noir-200)">服務項目</a>
     </div>
   </div>
+  <div class="hero-scroll" aria-hidden="true"><span>Scroll</span><span class="l"></span></div>
+</section>
 
-  <!-- Ticker bar -->
-  <div class="hero-ticker">
-    <div class="ticker-inner">
-	  <span class="ticker-item">中央空調工程 <span class="ticker-dot"></span> 變頻冷暖安裝 <span class="ticker-dot"></span> 維修保養 <span class="ticker-dot"></span> 台中・彰化服務 <span class="ticker-dot"></span> 30年專業經驗 <span class="ticker-dot"></span> 冷氣維修・清洗保養 <span class="ticker-dot"></span> 變頻冷暖空調安裝 <span class="ticker-dot"></span> 商用廠辦空調施工 <span class="ticker-dot"></span></span>
-	  <span class="ticker-item">中央空調工程 <span class="ticker-dot"></span> 變頻冷暖安裝 <span class="ticker-dot"></span> 維修保養 <span class="ticker-dot"></span> 台中・彰化服務 <span class="ticker-dot"></span> 30年專業經驗 <span class="ticker-dot"></span> 冷氣維修・清洗保養 <span class="ticker-dot"></span> 變頻冷暖空調安裝 <span class="ticker-dot"></span> 商用廠辦空調施工 <span class="ticker-dot"></span></span>
-	  <span class="ticker-item">中央空調工程 <span class="ticker-dot"></span> 變頻冷暖安裝 <span class="ticker-dot"></span> 維修保養 <span class="ticker-dot"></span> 台中・彰化服務 <span class="ticker-dot"></span> 30年專業經驗 <span class="ticker-dot"></span> 冷氣維修・清洗保養 <span class="ticker-dot"></span> 變頻冷暖空調安裝 <span class="ticker-dot"></span> 商用廠辦空調施工 <span class="ticker-dot"></span></span>
-	  <span class="ticker-item">中央空調工程 <span class="ticker-dot"></span> 變頻冷暖安裝 <span class="ticker-dot"></span> 維修保養 <span class="ticker-dot"></span> 台中・彰化服務 <span class="ticker-dot"></span> 30年專業經驗 <span class="ticker-dot"></span> 冷氣維修・清洗保養 <span class="ticker-dot"></span> 變頻冷暖空調安裝 <span class="ticker-dot"></span> 商用廠辦空調施工 <span class="ticker-dot"></span></span>
-	</div>
+<!-- ============ STATS ============ -->
+<section id="stats">
+  <div class="stats-grid">
+    <div class="stat reveal"><div class="n" data-count="30">0<span class="u">+</span></div><div class="l">年工程經驗</div></div>
+    <div class="stat reveal d1"><div class="n" data-count="1000">0<span class="u">+</span></div><div class="l">完工案例</div></div>
+    <div class="stat reveal d2"><div class="n">台中<span class="u">·</span>彰化</div><div class="l">服務區域</div></div>
+    <div class="stat reveal d3"><div class="n">審查<span class="u">合格</span></div><div class="l">冷凍空調工程業</div></div>
   </div>
 </section>
 
-<!-- ====== CERT ====== -->
-<section id="cert" style="background: var(--gray-100);">
-  <div class="container">
-    <div class="cert-grid">
-      <div class="cert-text reveal">
-        <div class="section-label">專業認證</div>
-        <h2 class="section-title">合法登記<br>冷凍空調工程業</h2>
-        <p>泓谷企業有限公司領有經濟部核發之合格證書，所有工程皆由具備國家技術證照的專業師傅把關，以嚴謹的施工流程與穩定的工程品質，提供安全可靠的空調服務，讓客戶安心託付、放心使用。</p>
-        <div class="cert-tags">
-          <span class="tag-item">✓ 經濟部審查合格</span>
-          <span class="tag-item">✓ 專業持證技術人員</span>
+<!-- ============ ABOUT + CERT ============ -->
+<section id="about" class="section">
+  <div class="wrap">
+    <div class="ac-grid">
+      <div class="ac-body reveal">
+        <div class="eyebrow">About · Certified</div>
+        <h2 class="ac-title">深耕中部三十年<br>合法登記冷凍空調工程業</h2>
+        <p class="ac-lead">以專業、品質與效率，<br>成就每一處理想的空調環境。</p>
+        <p class="ac-text">泓谷企業有限公司成立於民國八十四年六月，為經濟部審查合格之冷凍空調工程業者，專營中央空調、變頻冷暖與氣冷／水冷箱型冷氣之安裝、維修及保養。所有工程皆由具備國家技術證照的專業師傅把關，以嚴謹流程與穩定品質，提供安全可靠、值得信賴的空調服務。</p>
+        <div class="cert-list">
+          <div class="cert-li"><span class="dm">◆</span>經濟部審查合格</div>
+          <div class="cert-li"><span class="dm">◆</span>國家技術證照持證施工</div>
+          <div class="cert-li"><span class="dm">◆</span>穩定工程品質與售後服務</div>
         </div>
       </div>
-      <div class="cert-visual reveal">
+      <div class="ac-media reveal d1">
         <div class="cert-frame">
-          <img src="license.jpg" alt="合格證書" loading="lazy">
-          <div class="cert-gloss"></div>
+          <picture>
+            <source srcset="license.webp" type="image/webp">
+            <img src="license.jpg" alt="經濟部核發之冷凍空調業合格登記證書" width="1400" height="1978" loading="lazy" decoding="async">
+          </picture>
         </div>
       </div>
     </div>
+    <div class="about-meta reveal d2">
+      <div class="about-mi"><div class="k">1995</div><div class="v">Established</div></div>
+      <div class="about-mi"><div class="k">30+</div><div class="v">Years</div></div>
+      <div class="about-mi"><div class="k">1000+</div><div class="v">Projects</div></div>
+      <div class="about-mi"><div class="k">◆</div><div class="v">Certified</div></div>
+    </div>
   </div>
 </section>
 
-<!-- ====== ABOUT ====== -->
-<section id="about">
-  <div class="container">
-    <div class="about-grid">
-      <div style="position:relative" class="reveal">
-        <div class="about-img-main">
-		  <img src="main.jpg" alt="泓谷企業工程實景" loading="lazy" style="width:100%; height:100%; object-fit:cover; position:absolute; inset:0;">
-		</div>
-        <div class="about-badge-float">30+<small style="display:block; font-size:0.6rem; font-weight:400; letter-spacing:0.1em; opacity:0.6; margin-top:4px">年專業經驗</small></div>
+<!-- ============ PHILOSOPHY ============ -->
+<section id="philosophy">
+  <div class="phil-bg" aria-hidden="true">
+    <picture>
+      <source srcset="p6.webp" type="image/webp">
+      <img src="p6.jpg" alt="" width="900" height="506" loading="lazy" decoding="async">
+    </picture>
+  </div>
+  <div class="phil-in reveal">
+    <div class="phil-mark" aria-hidden="true">❝</div>
+    <blockquote class="phil-q">三十年來，我們始終相信<br>穩定的空調，來自嚴謹的每一道工序。</blockquote>
+    <div class="phil-cite">
+      <span class="ln"></span>
+      <span class="lb">泓谷企業 · 品質理念</span>
+      <span class="ln"></span>
+    </div>
+  </div>
+</section>
+
+
+<!-- ============ SERVICES ============ -->
+<section id="services" class="section">
+  <div class="wrap">
+    <div class="sec-head reveal">
+      <div class="eyebrow line">Our Services</div>
+      <div class="t">全方位空調工程</div>
+    </div>
+    <div class="svc-grid">
+      <div class="svc reveal">
+        <span class="cn tl"></span><span class="cn br"></span>
+        <div class="n">01</div>
+        <div class="ic"><svg viewBox="0 0 24 24"><rect x="2" y="3" width="20" height="14" rx="1"/><path d="M6 21h12M9 17v4M15 17v4"/></svg></div>
+        <h3>中央空調系統工程</h3>
+        <p>商辦大樓、廠房與大型娛樂休閒場所的系統規劃與施工，整合出穩定高效的空調環境。</p>
       </div>
-      <div class="about-content reveal">
-        <div class="section-label">關於我們</div>
-        <h2 class="section-title">深耕中部三十年</h2>
-        <p class="about-text">泓谷企業有限公司成立於民國八十四年六月，深耕冷凍空調工程領域三十逾年，為經濟部審查合格之冷凍空調工程業者。公司專營中央空調工程、變頻冷暖空調、氣冷與水冷箱型冷氣之安裝、維修及保養服務，累積豐富的工程實務經驗。多年來，泓谷企業持續秉持專業技術、誠信服務與完善施工品質的核心理念，不斷精進工程技術與服務流程，致力於提供客戶高品質且值得信賴的空調解決方案。客戶長期的支持與肯定，正是本公司持續成長與堅持品質的最大動力。</p>
+      <div class="svc reveal d1">
+        <span class="cn tl"></span><span class="cn br"></span>
+        <div class="n">02</div>
+        <div class="ic"><svg viewBox="0 0 24 24"><path d="M13 2L3 14h9l-1 8 10-12h-9l1-8z"/></svg></div>
+        <h3>變頻冷暖空調安裝</h3>
+        <p>節能系統安裝，精準控溫、有效降低長期電費支出，兼顧舒適與效率。</p>
+      </div>
+      <div class="svc reveal d2">
+        <span class="cn tl"></span><span class="cn br"></span>
+        <div class="n">03</div>
+        <div class="ic"><svg viewBox="0 0 24 24"><path d="M14.7 6.3a1 1 0 000 1.4l1.6 1.6a1 1 0 001.4 0l3.77-3.77a6 6 0 01-7.94 7.94l-6.91 6.91a2.12 2.12 0 01-3-3l6.91-6.91a6 6 0 017.94-7.94l-3.76 3.76z"/></svg></div>
+        <h3>冷氣維修・清洗保養</h3>
+        <p>各品牌故障排除與定期清洗保養，延長設備壽命、維持最佳運轉效能。</p>
+      </div>
+      <div class="svc reveal">
+        <span class="cn tl"></span><span class="cn br"></span>
+        <div class="n">04</div>
+        <div class="ic"><svg viewBox="0 0 24 24"><path d="M3 21h18M5 21V7l7-4 7 4v14M9 9h.01M15 9h.01M9 13h.01M15 13h.01"/></svg></div>
+        <h3>商用廠辦空調施工</h3>
+        <p>依場域需求整合規劃，為商用空間打造穩定、安全且高效的空調系統。</p>
+      </div>
+      <div class="svc reveal d1">
+        <span class="cn tl"></span><span class="cn br"></span>
+        <div class="n">05</div>
+        <div class="ic"><svg viewBox="0 0 24 24"><rect x="3" y="4" width="18" height="12" rx="1"/><path d="M7 20h10M12 16v4M6 8h4M6 11h6"/></svg></div>
+        <h3>冰水主機、箱型冷氣</h3>
+        <p>氣冷與水冷系統、冰水主機及箱型冷氣之專業安裝施工。</p>
+      </div>
+      <div class="svc reveal d2" style="display:flex;flex-direction:column;justify-content:center;background:transparent;border-color:var(--noir-800)">
+        <div class="eyebrow" style="margin-bottom:1.2rem">Consultation</div>
+        <h3 style="margin-bottom:1.4rem">需要專業評估？</h3>
+        <p style="margin-bottom:1.8rem">歡迎與我們聯繫，為您評估與建議。</p>
+        <a href="#contact" class="btn" style="align-self:flex-start;padding:12px 26px">聯絡我們 <span class="ar">→</span></a>
       </div>
     </div>
   </div>
 </section>
 
-<!-- ====== SERVICES ====== -->
-<section id="services">
-  <div class="container">
-    <div class="section-label">服務項目</div>
-    <h2 class="section-title">全方位空調工程</h2>
-    <div class="services-grid">
-      <div class="service-card reveal">
-        <div class="service-icon-wrap"><svg width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="var(--blue)" stroke-width="2"><rect x="2" y="3" width="20" height="14" rx="2"/></svg></div>
-        <h3 style="margin-bottom:0.6rem; font-family:'Oswald',sans-serif; font-weight:600; font-size:1.1rem; color:var(--navy)">中央空調工程</h3>
-        <p style="font-size:0.88rem; color:var(--text-muted)">商辦大樓、廠房、大型娛樂休閒場所系統施工。</p>
+
+
+
+<!-- ============ PORTFOLIO ============ -->
+<section id="portfolio" class="section">
+  <div class="wrap">
+    <div class="sec-head reveal">
+      <div class="eyebrow line">Portfolio</div>
+      <div class="t">工程實績</div>
+    </div>
+    <div class="gallery reveal" id="gallery">
+      <div class="gal-stage">
+        <div class="gal-frame">
+          <span class="cn tl" aria-hidden="true"></span><span class="cn br" aria-hidden="true"></span>
+          <figure class="gal-slide is-active"><picture><source srcset="p1.webp" type="image/webp"><img src="p1.jpg" alt="商用廠辦空調施工" width="900" height="675" fetchpriority="high" decoding="async"></picture></figure>
+          <figure class="gal-slide"><picture><source srcset="p2.webp" type="image/webp"><img src="p2.jpg" alt="工廠大型空調施工" width="900" height="675" loading="lazy" decoding="async"></picture></figure>
+          <figure class="gal-slide"><picture><source srcset="p3.webp" type="image/webp"><img src="p3.jpg" alt="冰水主機安裝施工" width="800" height="600" loading="lazy" decoding="async"></picture></figure>
+          <figure class="gal-slide"><picture><source srcset="p4.webp" type="image/webp"><img src="p4.jpg" alt="箱型冷氣安裝施工" width="600" height="800" loading="lazy" decoding="async"></picture></figure>
+          <figure class="gal-slide"><picture><source srcset="p5.webp" type="image/webp"><img src="p5.jpg" alt="分離式冷氣安裝施工" width="900" height="675" loading="lazy" decoding="async"></picture></figure>
+          <figure class="gal-slide"><picture><source srcset="p6.webp" type="image/webp"><img src="p6.jpg" alt="變頻多聯冷暖空調施工" width="900" height="506" loading="lazy" decoding="async"></picture></figure>
+          <figure class="gal-slide"><picture><source srcset="p7.webp" type="image/webp"><img src="p7.jpg" alt="冷氣空調維修保養" width="800" height="600" loading="lazy" decoding="async"></picture></figure>
+
+          <div class="gal-shade" aria-hidden="true"></div>
+          <div class="gal-caption" aria-live="polite">
+            <div class="gal-eyebrow"><span class="gal-num">01</span><span class="gal-sep">/</span><span>07</span></div>
+            <h3 class="gal-title">商用廠辦空調施工</h3>
+          </div>
+          <button class="gal-nav prev" id="gal-prev" aria-label="上一個案例">←</button>
+          <button class="gal-nav next" id="gal-next" aria-label="下一個案例">→</button>
+          <div class="gal-progress" aria-hidden="true"><span id="gal-bar"></span></div>
+        </div>
       </div>
-      <div class="service-card featured reveal">
-        <div class="service-icon-wrap" style="background:rgba(255,255,255,0.1)"><svg width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="var(--cyan)" stroke-width="2"><path d="M13 2L3 14h9l-1 8 10-12h-9l1-8z"/></svg></div>
-        <h3 style="margin-bottom:0.6rem; font-family:'Oswald',sans-serif; font-weight:600; font-size:1.1rem; color:#fff">變頻冷暖空調</h3>
-        <p style="font-size:0.88rem; color:rgba(255,255,255,0.6)">節能系統安裝，有效降低電費支出。</p>
-      </div>
-      <div class="service-card reveal">
-        <div class="service-icon-wrap"><svg width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="var(--blue)" stroke-width="2"><path d="M14.7 6.3a1 1 0 000 1.4l1.6 1.6a1 1 0 001.4 0l3.77-3.77a6 6 0 01-7.94 7.94l-6.91 6.91a2.12 2.12 0 01-3-3l6.91-6.91a6 6 0 017.94-7.94l-3.76 3.76z"/></svg></div>
-        <h3 style="margin-bottom:0.6rem; font-family:'Oswald',sans-serif; font-weight:600; font-size:1.1rem; color:var(--navy)">專業維修保養</h3>
-        <p style="font-size:0.88rem; color:var(--text-muted)">各品牌故障排除、定期清洗，延長壽命。</p>
+
+      <div class="gal-thumbs" role="tablist" aria-label="工程實績縮圖">
+        <button class="gal-thumb is-active" role="tab" aria-selected="true" data-title="商用廠辦空調施工" aria-label="第 1 個案例：商用廠辦空調施工"><picture><source srcset="p1.webp" type="image/webp"><img src="p1.jpg" alt="" width="900" height="675" loading="lazy" decoding="async"></picture><span class="th-n">01</span></button>
+        <button class="gal-thumb" role="tab" aria-selected="false" data-title="工廠大型空調施工" aria-label="第 2 個案例：工廠大型空調施工"><picture><source srcset="p2.webp" type="image/webp"><img src="p2.jpg" alt="" width="900" height="675" loading="lazy" decoding="async"></picture><span class="th-n">02</span></button>
+        <button class="gal-thumb" role="tab" aria-selected="false" data-title="冰水主機安裝施工" aria-label="第 3 個案例：冰水主機安裝施工"><picture><source srcset="p3.webp" type="image/webp"><img src="p3.jpg" alt="" width="800" height="600" loading="lazy" decoding="async"></picture><span class="th-n">03</span></button>
+        <button class="gal-thumb" role="tab" aria-selected="false" data-title="箱型冷氣安裝施工" aria-label="第 4 個案例：箱型冷氣安裝施工"><picture><source srcset="p4.webp" type="image/webp"><img src="p4.jpg" alt="" width="600" height="800" loading="lazy" decoding="async"></picture><span class="th-n">04</span></button>
+        <button class="gal-thumb" role="tab" aria-selected="false" data-title="分離式冷氣安裝施工" aria-label="第 5 個案例：分離式冷氣安裝施工"><picture><source srcset="p5.webp" type="image/webp"><img src="p5.jpg" alt="" width="900" height="675" loading="lazy" decoding="async"></picture><span class="th-n">05</span></button>
+        <button class="gal-thumb" role="tab" aria-selected="false" data-title="變頻多聯冷暖空調施工" aria-label="第 6 個案例：變頻多聯冷暖空調施工"><picture><source srcset="p6.webp" type="image/webp"><img src="p6.jpg" alt="" width="900" height="506" loading="lazy" decoding="async"></picture><span class="th-n">06</span></button>
+        <button class="gal-thumb" role="tab" aria-selected="false" data-title="冷氣空調維修保養" aria-label="第 7 個案例：冷氣空調維修保養"><picture><source srcset="p7.webp" type="image/webp"><img src="p7.jpg" alt="" width="800" height="600" loading="lazy" decoding="async"></picture><span class="th-n">07</span></button>
       </div>
     </div>
   </div>
 </section>
 
-<!-- ====== PORTFOLIO ====== -->
-<section id="portfolio">
-  <div class="container">
-    <div class="section-label">工程實績</div>
-    <h2 class="section-title">施工案例展示</h2>
-    <div class="swiper project-swiper">
-      <div class="swiper-wrapper">
-        <div class="swiper-slide"><div class="project-card"><img src="p1.jpg" alt="商用廠辦" loading="lazy"> <div class="p-info">商用廠辦空調施工</div></div></div>
-        <div class="swiper-slide"><div class="project-card"><img src="p2.jpg" alt="工廠大型" loading="lazy"> <div class="p-info">工廠大型空調施工</div></div></div>
-        <div class="swiper-slide"><div class="project-card"><img src="p3.jpg" alt="冰水主機" loading="lazy"> <div class="p-info">冰水主機安裝施工</div></div></div>
-        <div class="swiper-slide"><div class="project-card"><img src="p4.jpg" alt="箱型冷氣" loading="lazy"> <div class="p-info">箱型冷氣安裝施工</div></div></div>
-        <div class="swiper-slide"><div class="project-card"><img src="p5.jpg" alt="分離式" loading="lazy">   <div class="p-info">分離式冷氣安裝施工</div></div></div>
-        <div class="swiper-slide"><div class="project-card"><img src="p6.jpg" alt="變頻多聯" loading="lazy"> <div class="p-info">變頻多聯冷暖空調施工</div></div></div>
-		<div class="swiper-slide"><div class="project-card"><img src="p7.jpg" alt="冷氣空調維修保養" loading="lazy"> <div class="p-info">冷氣空調維修保養</div></div></div>
-      </div>
-      <div class="swiper-pagination"></div>
+<!-- ============ PARTNERS ============ -->
+<section id="partners" class="section tight">
+  <div class="wrap">
+    <div class="sec-head reveal">
+      <div class="eyebrow line">Partners</div>
+      <div class="t">合作品牌</div>
+    </div>
+    <div class="partners-grid reveal">
+      <a href="https://www.hotaidev.com.tw/web/" target="_blank" rel="noopener" class="partner"><span class="cn tl"></span><span class="cn br"></span><span class="pn">大金</span><span class="pe">Daikin</span></a>
+      <a href="https://www.hitachiaircon.com/tw/" target="_blank" rel="noopener" class="partner"><span class="cn tl"></span><span class="cn br"></span><span class="pn">日立</span><span class="pe">Hitachi</span></a>
+      <a href="https://www.panasonic.com/tw/consumer/air-conditioner/house-air-conditioner.html" target="_blank" rel="noopener" class="partner"><span class="cn tl"></span><span class="cn br"></span><span class="pn">國際</span><span class="pe">Panasonic</span></a>
+      <a href="https://www.mitsubishielectric.com.tw/hvac/" target="_blank" rel="noopener" class="partner"><span class="cn tl"></span><span class="cn br"></span><span class="pn">三菱</span><span class="pe">Mitsubishi</span></a>
     </div>
   </div>
 </section>
 
-<!-- ====== CONTACT ====== -->
-<section id="contact">
-  <div class="container">
+<!-- ============ CONTACT ============ -->
+<section id="contact" class="section">
+  <div class="wrap">
     <div class="contact-grid">
-      <div class="contact-info reveal">
-        <div class="section-label">聯絡我們</div>
-        <h2 class="section-title">聯絡我們</h2>
-        <div class="contact-card"><strong>電話</strong><span><a href="tel:047636171" style="color:inherit; text-decoration:none;">04 763 6171</a></span></div>
-        <div class="contact-card"><strong>地址</strong><span>500 彰化縣彰化市南興街 121 巷 25 弄 41 號</span></div>
-        <div class="contact-card"><strong>服務區域</strong><span>台中市、彰化縣 全區</span></div>
-        <div class="contact-card"><strong>營業時間</strong><span>週一至週五 08:00 – 17:00</span></div>
+      <div class="contact-left reveal">
+        <div class="eyebrow">Contact</div>
+        <h2>與我們聯繫</h2>
+        <div class="contact-rows">
+          <div class="crow"><div class="k">Tel · 電話</div><div class="v"><a href="tel:047636171">04-763-6171</a></div></div>
+          <div class="crow"><div class="k">Address · 地址</div><div class="v" style="font-size:1.05rem">500 彰化縣彰化市南興街 121 巷 25 弄 41 號</div></div>
+          <div class="crow"><div class="k">Area · 服務區域</div><div class="v">台中市、彰化縣 全區</div></div>
+          <div class="crow"><div class="k">Hours · 營業時間</div><div class="v">週一至週五 08:00 – 17:00</div></div>
+        </div>
       </div>
-      <div class="contact-form-block reveal">
-        <form action="https://formspree.io/f/xojrydgo" method="POST">
-          <div class="form-group">
-            <label>您的姓名</label>
-            <input type="text" name="name" required placeholder="例如：王先生">
-          </div>
-          <div class="form-group">
-            <label>聯絡電話</label>
-            <input type="tel" name="phone" required placeholder="0912-345678">
-          </div>
-          <div class="form-group">
-            <label>電子郵件</label>
-            <input type="email" name="email" placeholder="example@mail.com">
-          </div>
-          <div class="form-group">
-            <label>需求說明</label>
-            <textarea name="message" rows="4" placeholder="請簡述您的空調需求..."></textarea>
-          </div>
-          <button type="submit" class="form-submit">送出 →</button>
+      <div class="contact-right reveal d1">
+        <form class="form" action="https://formspree.io/f/xojrydgo" method="POST">
+          <div class="fg"><label for="f-name">您的姓名 / Name</label><input id="f-name" type="text" name="name" required placeholder="例如：王先生"></div>
+          <div class="fg"><label for="f-phone">聯絡電話 / Phone</label><input id="f-phone" type="tel" name="phone" required placeholder="0912-345678"></div>
+          <div class="fg"><label for="f-email">電子郵件 / Email</label><input id="f-email" type="email" name="email" placeholder="example@mail.com"></div>
+          <div class="fg"><label for="f-msg">需求說明 / Message</label><textarea id="f-msg" name="message" rows="3" placeholder="請簡述您的空調需求..."></textarea></div>
+          <button type="submit" class="btn solid">送出 <span class="ar">→</span></button>
         </form>
       </div>
     </div>
@@ -310,112 +348,178 @@
   </div>
 </section>
 
-<!-- Brand sidebar -->
-<div class="brand-sidebar left">
-  <div class="brand-sidebar-label">合作品牌</div>
-  <a href="https://www.hotaidev.com.tw/web/" target="_blank" rel="noopener" class="brand-item" title="大金空調">
-    <span>大金</span><small>DAIKIN</small>
-  </a>
-  <a href="https://hitachi-ac.com.tw" target="_blank" rel="noopener" class="brand-item" title="日立空調">
-    <span>日立</span><small>HITACHI</small>
-  </a>
-</div>
-<div class="brand-sidebar right">
-  <div class="brand-sidebar-label">合作品牌</div>
-  <a href="https://www.panasonic.com/tw/consumer/air-conditioner/house-air-conditioner.html" target="_blank" rel="noopener" class="brand-item" title="Panasonic空調">
-    <span>國際</span><small>PANASONIC</small>
-  </a>
-  <a href="https://www.mitsubishielectric.com.tw/hvac/" target="_blank" rel="noopener" class="brand-item" title="三菱電機空調">
-    <span>三菱</span><small>MITSUBISHI</small>
-  </a>
-</div>
-
-<footer>
-  <div class="container">
-    <p>© <span id="footer-year"></span> 泓谷企業有限公司 版權所有 | 經濟部審查合格冷凍空調工程業</p>
+<!-- ============ FOOTER ============ -->
+<footer id="footer">
+  <div class="wrap">
+    <div class="foot-brand">
+      <div class="foot-diamonds" aria-hidden="true">◆ ── ◆ ── ◆</div>
+      <div class="foot-name"><span class="dm">◆</span>泓谷企業有限公司<span class="dm">◆</span></div>
+      <div class="foot-tag">冷凍空調工程 · 台中彰化</div>
+    </div>
+    <div class="foot-div" aria-hidden="true"><span class="ln"></span><span class="st">✦</span><span class="ln"></span></div>
+    <div class="foot-cols">
+      <div class="foot-col">
+        <h4>Company</h4>
+        <p>經濟部審查合格冷凍空調工程業，深耕台中、彰化三十年，提供中央空調、變頻冷暖與維修保養整合服務。</p>
+      </div>
+      <div class="foot-col">
+        <h4>Sitemap</h4>
+        <a href="#about">關於我們</a>
+        <a href="#services">服務項目</a>
+        <a href="#portfolio">工程實績</a>
+        <a href="#contact">聯絡我們</a>
+      </div>
+      <div class="foot-col">
+        <h4>Contact</h4>
+        <a href="tel:047636171">04-763-6171</a>
+        <p>500 彰化縣彰化市南興街 121 巷 25 弄 41 號</p>
+        <p>週一至週五 08:00–17:00</p>
+      </div>
+    </div>
+    <div class="foot-bottom">© <span id="year"></span> 泓谷企業有限公司 · All Rights Reserved</div>
   </div>
 </footer>
 
-<script src="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.js"></script>
 <script>
-  // Swiper
-  new Swiper('.project-swiper', {
-    loop: true,
-    autoplay: { delay: 3000, disableOnInteraction: false },
-    pagination: { el: '.swiper-pagination', clickable: true },
-    slidesPerView: 1,
-    spaceBetween: 20,
-    breakpoints: { 768: { slidesPerView: 2 }, 1024: { slidesPerView: 3 } }
-  });
+  document.getElementById('year').textContent = new Date().getFullYear();
 
-  // Stagger service cards
-  document.querySelectorAll('.services-grid .service-card').forEach((el, i) => {
-    el.style.transitionDelay = (i * 0.12) + 's';
-  });
-
-  // Number counter
-  function countUp(el) {
-    const target = +el.dataset.count;
-    const suffix = el.querySelector('.stat-suffix');
-    const suffixHTML = suffix ? suffix.outerHTML : '';
-    const duration = 1800;
-    let start = null;
-    const tick = ts => {
-      if (!start) start = ts;
-      const p = Math.min((ts - start) / duration, 1);
-      const ease = 1 - Math.pow(1 - p, 3);
-      el.innerHTML = Math.floor(ease * target) + suffixHTML;
-      if (p < 1) requestAnimationFrame(tick);
-    };
-    requestAnimationFrame(tick);
-  }
-
-  // Reveal + counter observer
-  const observer = new IntersectionObserver((entries) => {
-    entries.forEach(entry => {
-      if (!entry.isIntersecting) return;
-      entry.target.classList.add('visible');
-      if (entry.target.dataset.count) {
-        countUp(entry.target);
-        observer.unobserve(entry.target);
-      }
-    });
-  }, { threshold: 0.15 });
-
-  document.querySelectorAll('.reveal').forEach(el => observer.observe(el));
-  document.querySelectorAll('[data-count]').forEach(el => observer.observe(el));
-
-  // Scroll: progress bar + nav scrolled state + active section
-  const progressBar = document.getElementById('scroll-progress');
-  const navbar = document.getElementById('navbar');
+  // Progress + nav active
+  const progress = document.getElementById('progress');
   const sections = document.querySelectorAll('section[id]');
   const navLinks = document.querySelectorAll('.nav-links a');
-
   window.addEventListener('scroll', () => {
-    const scrollTop = window.scrollY;
-    const docHeight = document.documentElement.scrollHeight - window.innerHeight;
-    progressBar.style.width = (scrollTop / docHeight * 100) + '%';
-
-    navbar.classList.toggle('scrolled', scrollTop > 60);
-
-    let current = '';
-    sections.forEach(s => { if (scrollTop >= s.offsetTop - 120) current = s.id; });
-    navLinks.forEach(link => {
-      link.classList.toggle('active', link.getAttribute('href') === '#' + current);
-    });
+    const y = window.scrollY;
+    const docH = document.documentElement.scrollHeight - window.innerHeight;
+    progress.style.width = (y / docH * 100) + '%';
+    let cur = '';
+    sections.forEach(s => { if (y >= s.offsetTop - 140) cur = s.id; });
+    navLinks.forEach(a => a.classList.toggle('active', a.getAttribute('href') === '#' + cur));
   }, { passive: true });
 
-  // Mobile nav
-  document.getElementById('hamburger').addEventListener('click', () => {
-    document.querySelector('.nav-links').classList.toggle('open');
+  // Mobile menu
+  const burger = document.getElementById('hamburger');
+  const menu = document.getElementById('m-menu');
+  burger.addEventListener('click', () => {
+    const open = menu.classList.toggle('open');
+    burger.setAttribute('aria-expanded', open ? 'true' : 'false');
+    burger.setAttribute('aria-label', open ? '關閉選單' : '開啟選單');
   });
-  document.querySelectorAll('.nav-links a').forEach(link => {
-    link.addEventListener('click', () => {
-      document.querySelector('.nav-links').classList.remove('open');
-    });
-  });
+  menu.querySelectorAll('a').forEach(a => a.addEventListener('click', () => {
+    menu.classList.remove('open'); burger.setAttribute('aria-expanded', 'false');
+  }));
 
-  document.getElementById('footer-year').textContent = new Date().getFullYear();
+  // Reveal + counters
+  const reduce = window.matchMedia('(prefers-reduced-motion: reduce)').matches;
+  function countUp(el) {
+    const target = +el.dataset.count;
+    const u = el.querySelector('.u');
+    const uHTML = u ? u.outerHTML : '';
+    if (reduce) { el.innerHTML = target + uHTML; return; }
+    let s = null;
+    const step = ts => {
+      if (!s) s = ts;
+      const p = Math.min((ts - s) / 1800, 1);
+      const e = 1 - Math.pow(1 - p, 3);
+      el.innerHTML = Math.floor(e * target) + uHTML;
+      if (p < 1) requestAnimationFrame(step);
+    };
+    requestAnimationFrame(step);
+  }
+  if ('IntersectionObserver' in window) {
+    const io = new IntersectionObserver((entries) => {
+      entries.forEach(en => {
+        if (!en.isIntersecting) return;
+        en.target.classList.add('in');
+        const c = en.target.querySelector('[data-count]');
+        if (c && !c.dataset.done) { c.dataset.done = 1; countUp(c); }
+        io.unobserve(en.target);
+      });
+    }, { threshold: 0.14 });
+    document.querySelectorAll('.reveal').forEach(el => io.observe(el));
+  } else {
+    document.querySelectorAll('.reveal').forEach(el => el.classList.add('in'));
+    document.querySelectorAll('[data-count]').forEach(countUp);
+  }
+
+  // Portfolio gallery (custom, no dependencies)
+  (function () {
+    const gallery = document.getElementById('gallery');
+    if (!gallery) return;
+    const slides = [...gallery.querySelectorAll('.gal-slide')];
+    const thumbs = [...gallery.querySelectorAll('.gal-thumb')];
+    const thumbsWrap = gallery.querySelector('.gal-thumbs');
+    const titleEl = gallery.querySelector('.gal-title');
+    const numEl = gallery.querySelector('.gal-num');
+    const bar = document.getElementById('gal-bar');
+    const total = slides.length;
+    const DURATION = 5000;
+    let idx = 0, timer = null, restart = null;
+
+    // Horizontal-only scroll inside the thumb strip — never scrolls the page.
+    function centerThumb() {
+      const c = thumbsWrap, t = thumbs[idx];
+      if (c.scrollWidth <= c.clientWidth) return;   // not scrollable (desktop grid)
+      const cRect = c.getBoundingClientRect(), tRect = t.getBoundingClientRect();
+      const target = c.scrollLeft + (tRect.left - cRect.left) - (c.clientWidth - t.clientWidth) / 2;
+      c.scrollTo({ left: target, behavior: 'smooth' });
+    }
+    function render(scroll) {
+      slides.forEach((s, i) => s.classList.toggle('is-active', i === idx));
+      thumbs.forEach((t, i) => {
+        const on = i === idx;
+        t.classList.toggle('is-active', on);
+        t.setAttribute('aria-selected', on ? 'true' : 'false');
+      });
+      titleEl.textContent = thumbs[idx].dataset.title;
+      numEl.textContent = String(idx + 1).padStart(2, '0');
+      if (scroll) centerThumb();
+    }
+    function go(i) { idx = (i + total) % total; render(true); resetAuto(); }
+
+    function animateBar() {
+      if (!bar) return;
+      bar.style.transition = 'none';
+      bar.style.width = '0%';
+      void bar.offsetWidth;               // reflow
+      bar.style.transition = 'width ' + DURATION + 'ms linear';
+      bar.style.width = '100%';
+    }
+    function startAuto() {
+      if (reduce) return;
+      animateBar();
+      timer = setTimeout(() => go(idx + 1), DURATION);
+    }
+    function stopAuto() { clearTimeout(timer); if (restart) clearTimeout(restart); if (bar) { bar.style.transition = 'none'; } }
+    function resetAuto() { stopAuto(); startAuto(); }
+
+    thumbs.forEach((t, i) => {
+      t.addEventListener('click', () => go(i));
+    });
+    document.getElementById('gal-prev').addEventListener('click', () => go(idx - 1));
+    document.getElementById('gal-next').addEventListener('click', () => go(idx + 1));
+
+    // pause on hover / focus
+    gallery.addEventListener('mouseenter', stopAuto);
+    gallery.addEventListener('mouseleave', startAuto);
+    gallery.addEventListener('focusin', stopAuto);
+    gallery.addEventListener('focusout', startAuto);
+
+    // keyboard arrows when gallery focused
+    gallery.addEventListener('keydown', (e) => {
+      if (e.key === 'ArrowLeft') { e.preventDefault(); go(idx - 1); }
+      else if (e.key === 'ArrowRight') { e.preventDefault(); go(idx + 1); }
+    });
+
+    // start only when scrolled into view
+    if ('IntersectionObserver' in window) {
+      const vio = new IntersectionObserver((ents) => {
+        ents.forEach(en => en.isIntersecting ? startAuto() : stopAuto());
+      }, { threshold: 0.35 });
+      vio.observe(gallery);
+    } else { startAuto(); }
+
+    render(false);
+  })();
 </script>
 </body>
 </html>
