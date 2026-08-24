@@ -84,6 +84,7 @@
 <body>
 <a href="#hero" class="skip-link">跳至主要內容</a>
 <div id="progress" aria-hidden="true"></div>
+<canvas id="fx" aria-hidden="true"></canvas>
 
 <!-- ============ NAV ============ -->
 <header id="nav">
@@ -124,10 +125,13 @@
   <div class="hero-in">
     <div class="hero-top-line" aria-hidden="true"></div>
     <div class="eyebrow line hero-eyebrow">Refrigeration &amp; Air-Conditioning</div>
-    <h1 class="hero-title">冷凍空調工程</h1>
+    <h1 class="hero-title">
+      <span class="ht-brand">泓谷企業有限公司</span>
+      <span class="ht-main">冷凍空調工程</span>
+    </h1>
     <div class="hero-star" aria-hidden="true">✦</div>
     <div class="hero-sub">經濟部審查合格 · 深耕台中彰化三十年</div>
-    <p class="hero-desc">以嚴謹的施工標準與具專業證照的技術團隊<span class="sep">·</span><br>為廠房、商辦及大型休閒場所<br>打造穩定、安全且高效的空調環境</p>
+    <p class="hero-desc">以嚴謹的施工標準與具專業證照的技術團隊<span class="sep">·</span><br>為廠房、商辦及大型休閒場所打造穩定、安全且高效的空調環境</p>
     <div class="hero-actions">
       <a href="#contact" class="btn">聯絡我們 <span class="ar">→</span></a>
       <a href="#services" class="btn" style="border-color:var(--noir-600);color:var(--noir-200)">服務項目</a>
@@ -143,6 +147,25 @@
     <div class="stat reveal d1"><div class="n" data-count="1000">0<span class="u">+</span></div><div class="l">完工案例</div></div>
     <div class="stat reveal d2"><div class="n">台中<span class="u">·</span>彰化</div><div class="l">服務區域</div></div>
     <div class="stat reveal d3"><div class="n">審查<span class="u">合格</span></div><div class="l">冷凍空調工程業</div></div>
+  </div>
+</section>
+
+<!-- ============ PHILOSOPHY ============ -->
+<section id="philosophy">
+  <div class="phil-bg" aria-hidden="true">
+    <picture>
+      <source srcset="p6.webp" type="image/webp">
+      <img src="p6.jpg" alt="" width="900" height="506" loading="lazy" decoding="async">
+    </picture>
+  </div>
+  <div class="phil-in reveal">
+    <div class="phil-mark" aria-hidden="true">❝</div>
+    <blockquote class="phil-q">三十年來，我們始終相信<br>穩定的空調，來自嚴謹的每一道工序。</blockquote>
+    <div class="phil-cite">
+      <span class="ln"></span>
+      <span class="lb">泓谷企業 · 品質理念</span>
+      <span class="ln"></span>
+    </div>
   </div>
 </section>
 
@@ -175,25 +198,6 @@
       <div class="about-mi"><div class="k">30+</div><div class="v">Years</div></div>
       <div class="about-mi"><div class="k">1000+</div><div class="v">Projects</div></div>
       <div class="about-mi"><div class="k">◆</div><div class="v">Certified</div></div>
-    </div>
-  </div>
-</section>
-
-<!-- ============ PHILOSOPHY ============ -->
-<section id="philosophy">
-  <div class="phil-bg" aria-hidden="true">
-    <picture>
-      <source srcset="p6.webp" type="image/webp">
-      <img src="p6.jpg" alt="" width="900" height="506" loading="lazy" decoding="async">
-    </picture>
-  </div>
-  <div class="phil-in reveal">
-    <div class="phil-mark" aria-hidden="true">❝</div>
-    <blockquote class="phil-q">三十年來，我們始終相信<br>穩定的空調，來自嚴謹的每一道工序。</blockquote>
-    <div class="phil-cite">
-      <span class="ln"></span>
-      <span class="lb">泓谷企業 · 品質理念</span>
-      <span class="ln"></span>
     </div>
   </div>
 </section>
@@ -245,15 +249,12 @@
       <div class="svc reveal d2" style="display:flex;flex-direction:column;justify-content:center;background:transparent;border-color:var(--noir-800)">
         <div class="eyebrow" style="margin-bottom:1.2rem">Consultation</div>
         <h3 style="margin-bottom:1.4rem">需要專業評估？</h3>
-        <p style="margin-bottom:1.8rem">歡迎與我們聯繫，為您評估與建議。</p>
+        <p style="margin-bottom:1.8rem">歡迎與我們聯繫，由專業團隊為您提供現場評估與整合建議。</p>
         <a href="#contact" class="btn" style="align-self:flex-start;padding:12px 26px">聯絡我們 <span class="ar">→</span></a>
       </div>
     </div>
   </div>
 </section>
-
-
-
 
 <!-- ============ PORTFOLIO ============ -->
 <section id="portfolio" class="section">
@@ -273,10 +274,11 @@
           <figure class="gal-slide"><picture><source srcset="p5.webp" type="image/webp"><img src="p5.jpg" alt="分離式冷氣安裝施工" width="900" height="675" loading="lazy" decoding="async"></picture></figure>
           <figure class="gal-slide"><picture><source srcset="p6.webp" type="image/webp"><img src="p6.jpg" alt="變頻多聯冷暖空調施工" width="900" height="506" loading="lazy" decoding="async"></picture></figure>
           <figure class="gal-slide"><picture><source srcset="p7.webp" type="image/webp"><img src="p7.jpg" alt="冷氣空調維修保養" width="800" height="600" loading="lazy" decoding="async"></picture></figure>
+          <figure class="gal-slide"><picture><source srcset="p8.webp" type="image/webp"><img src="p8.jpg" alt="大型娛樂場所空調施工" width="900" height="778" loading="lazy" decoding="async"></picture></figure>
 
           <div class="gal-shade" aria-hidden="true"></div>
           <div class="gal-caption" aria-live="polite">
-            <div class="gal-eyebrow"><span class="gal-num">01</span><span class="gal-sep">/</span><span>07</span></div>
+            <div class="gal-eyebrow"><span class="gal-num">01</span><span class="gal-sep">/</span><span>08</span></div>
             <h3 class="gal-title">商用廠辦空調施工</h3>
           </div>
           <button class="gal-nav prev" id="gal-prev" aria-label="上一個案例">←</button>
@@ -293,10 +295,13 @@
         <button class="gal-thumb" role="tab" aria-selected="false" data-title="分離式冷氣安裝施工" aria-label="第 5 個案例：分離式冷氣安裝施工"><picture><source srcset="p5.webp" type="image/webp"><img src="p5.jpg" alt="" width="900" height="675" loading="lazy" decoding="async"></picture><span class="th-n">05</span></button>
         <button class="gal-thumb" role="tab" aria-selected="false" data-title="變頻多聯冷暖空調施工" aria-label="第 6 個案例：變頻多聯冷暖空調施工"><picture><source srcset="p6.webp" type="image/webp"><img src="p6.jpg" alt="" width="900" height="506" loading="lazy" decoding="async"></picture><span class="th-n">06</span></button>
         <button class="gal-thumb" role="tab" aria-selected="false" data-title="冷氣空調維修保養" aria-label="第 7 個案例：冷氣空調維修保養"><picture><source srcset="p7.webp" type="image/webp"><img src="p7.jpg" alt="" width="800" height="600" loading="lazy" decoding="async"></picture><span class="th-n">07</span></button>
+        <button class="gal-thumb" role="tab" aria-selected="false" data-title="大型娛樂場所空調施工" aria-label="第 8 個案例：大型娛樂場所空調施工"><picture><source srcset="p8.webp" type="image/webp"><img src="p8.jpg" alt="" width="900" height="778" loading="lazy" decoding="async"></picture><span class="th-n">08</span></button>
       </div>
     </div>
   </div>
 </section>
+
+
 
 <!-- ============ PARTNERS ============ -->
 <section id="partners" class="section tight">
@@ -334,7 +339,7 @@
           <div class="fg"><label for="f-phone">聯絡電話 / Phone</label><input id="f-phone" type="tel" name="phone" required placeholder="0912-345678"></div>
           <div class="fg"><label for="f-email">電子郵件 / Email</label><input id="f-email" type="email" name="email" placeholder="example@mail.com"></div>
           <div class="fg"><label for="f-msg">需求說明 / Message</label><textarea id="f-msg" name="message" rows="3" placeholder="請簡述您的空調需求..."></textarea></div>
-          <button type="submit" class="btn solid">送出 <span class="ar">→</span></button>
+          <button type="submit" class="btn solid">送出需求 <span class="ar">→</span></button>
         </form>
       </div>
     </div>
@@ -519,6 +524,59 @@
     } else { startAuto(); }
 
     render(false);
+  })();
+
+  // Ambient snow — small, slow drifting flakes
+  (function () {
+    if (reduce) return;
+    const cv = document.getElementById('fx');
+    if (!cv) return;
+    const ctx = cv.getContext('2d');
+    let dpr = 1, W = 0, H = 0, flakes = [];
+
+    function resize() {
+      dpr = Math.min(window.devicePixelRatio || 1, 2);
+      W = innerWidth; H = innerHeight;
+      cv.width = W * dpr; cv.height = H * dpr;
+      ctx.setTransform(dpr, 0, 0, dpr, 0, 0);
+    }
+    resize();
+    addEventListener('resize', resize);
+
+    const rnd = (a, b) => a + Math.random() * (b - a);
+    const COUNT = Math.min(70, Math.round(W / 22));   // sparse
+
+    function make(top) {
+      return {
+        x: rnd(0, W),
+        y: top ? rnd(-40, 0) : rnd(0, H),
+        r: rnd(0.8, 2.2),                 // small
+        vy: rnd(0.15, 0.5),               // slow fall
+        drift: rnd(0.15, 0.5),
+        phase: rnd(0, Math.PI * 2),
+        sway: rnd(0.4, 1.1),
+        a: rnd(0.3, 0.8)
+      };
+    }
+    for (let i = 0; i < COUNT; i++) flakes.push(make(false));
+
+    function tick() {
+      ctx.clearRect(0, 0, cv.width, cv.height);
+      for (const f of flakes) {
+        f.phase += 0.01;
+        f.y += f.vy;
+        f.x += Math.sin(f.phase) * f.drift * 0.5;
+        if (f.y - f.r > H) { Object.assign(f, make(true)); }
+        ctx.globalAlpha = f.a;
+        ctx.fillStyle = '#ffffff';
+        ctx.beginPath();
+        ctx.arc(f.x, f.y, f.r, 0, Math.PI * 2);
+        ctx.fill();
+      }
+      ctx.globalAlpha = 1;
+      requestAnimationFrame(tick);
+    }
+    requestAnimationFrame(tick);
   })();
 </script>
 </body>

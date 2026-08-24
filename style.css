@@ -85,6 +85,9 @@ a:focus-visible, button:focus-visible, input:focus-visible, textarea:focus-visib
 /* ===== Scroll progress ===== */
 #progress { position: fixed; top: 0; left: 0; height: 2px; width: 0%; background: linear-gradient(90deg, var(--gold-700), var(--gold-400)); z-index: 3000; transition: width 0.1s linear; }
 
+/* ===== Ambient snow ===== */
+#fx { position: fixed; inset: 0; z-index: 900; pointer-events: none; }
+
 /* ===== NAV ===== */
 #nav {
   position: sticky; top: 0; z-index: 1000;
@@ -116,7 +119,10 @@ a:focus-visible, button:focus-visible, input:focus-visible, textarea:focus-visib
 .hero-in { position: relative; z-index: 1; max-width: 860px; padding: 8rem 1.5rem 6rem; }
 .hero-top-line { width: 1px; height: 60px; background: linear-gradient(var(--gold-600), transparent); margin: 0 auto 2.5rem; }
 .hero-eyebrow { justify-content: center; margin-bottom: 2.5rem; }
-.hero-title { font-family: var(--serif); font-weight: 300; color: #fff; font-size: clamp(3.2rem, 8vw, 6.4rem); letter-spacing: 0.12em; line-height: 1.05; }
+.hero-title { font-family: var(--serif); font-weight: 300; color: #fff; letter-spacing: 0.12em; line-height: 1.05; }
+.ht-brand { display: block; font-size: clamp(1.05rem, 2.2vw, 1.7rem); font-weight: 400; letter-spacing: 0.32em; color: var(--gold-400); margin-bottom: 1.4rem; }
+.ht-brand.below { margin-bottom: 0; margin-top: 1.5rem; }
+.ht-main { display: block; font-size: clamp(3.2rem, 8vw, 6.4rem); letter-spacing: 0.12em; }
 .hero-star { color: rgba(201,168,76,0.6); font-size: 1.2rem; letter-spacing: 0.5em; margin: 1.6rem 0; }
 .hero-sub { font-size: 0.68rem; letter-spacing: 0.5em; text-transform: uppercase; color: rgba(201,168,76,0.7); }
 .hero-desc { color: var(--noir-200); font-size: 0.95rem; letter-spacing: 0.14em; line-height: 2.1; margin: 2.4rem auto 3rem; max-width: 620px; }
@@ -217,7 +223,7 @@ a:focus-visible, button:focus-visible, input:focus-visible, textarea:focus-visib
 .gal-progress { position: absolute; left: 0; right: 0; bottom: 0; z-index: 4; height: 2px; background: rgba(201,168,76,0.15); }
 .gal-progress span { display: block; height: 100%; width: 0%; background: linear-gradient(90deg, var(--gold-600), var(--gold-300)); }
 
-.gal-thumbs { display: grid; grid-template-columns: repeat(7, 1fr); gap: 12px; margin-top: 14px; }
+.gal-thumbs { display: grid; grid-template-columns: repeat(8, 1fr); gap: 12px; margin-top: 14px; }
 .gal-thumb {
   position: relative; padding: 0; border: 1px solid var(--noir-700); background: var(--noir-800);
   aspect-ratio: 4/3; overflow: hidden; cursor: pointer; opacity: 0.5;
